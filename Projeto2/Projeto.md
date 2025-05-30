@@ -54,7 +54,7 @@ A aplicação deve ser desenvolvida com **ASP.NET Core Razor Pages** e atender a
 
 ---
 
-## Estrutura Recomendada
+## Estrutura 
 
 ```
 /wwwroot
