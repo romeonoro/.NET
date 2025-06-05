@@ -60,18 +60,19 @@ A aplicação deve ser desenvolvida com **ASP.NET Core Razor Pages** e atender a
 /wwwroot
   /uploads        --> Armazenamento de imagens dos veículos
 /Pages
-  Index.cshtml          ← Página inicial
-  Create.cshtml         ← Formulário de cadastro
+  Index.cshtml          → Página inicial
+  Create.cshtml         → Formulário de cadastro
   Create.cshtml.cs      ← Lógica do cadastro
-  Edit.cshtml           ← Formulário de edição
+  Edit.cshtml           → Formulário de edição
   Edit.cshtml.cs        ← Lógica da edição
-  Details.cshtml        ← Visualização de detalhes
+  Details.cshtml        → Visualização de detalhes
   Details.cshtml.cs     ← Lógica de detalhes
-  List.cshtml           ← Lista de veículos
+  List.cshtml           → Lista de veículos
   List.cshtml.cs        ← Lógica da lista
 /Models
   Veiculo.cs            ← Classe que representa os veículos
 /Data
+  VeiculoUtils.cs       ← Funções para manipular o arquivo
   veiculos.txt          ← Armazenamento dos dados
 
 ```
