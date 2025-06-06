@@ -83,5 +83,14 @@ A aplicação deve ser desenvolvida com **ASP.NET Core Razor Pages** e atender a
 
 - ASP.NET Core
 - Razor Pages
-- HTML/CSS
+- HTML/CSS, Bootstrap
 - Manipulação de arquivos em C#
+
+## Melhorias Futuras
+
+- 🔍 **Filtro de pesquisa** na listagem de veículos, permitindo buscar por nome, marca, modelo ou ano.  
+- 🚫 **Validação de Renavam duplicado**, impedindo o cadastro de dois veículos com o mesmo número de Renavam.  
+- 🧹 **Melhoria na usabilidade**, como ordenação da tabela, paginação e mensagens de confirmação.  
+- 📱 **Design responsivo**, para melhor visualização em dispositivos móveis.  
+- 💾 **Exportação dos dados** em formatos como CSV ou PDF.  
+- 🔐 **Autenticação e autorização**, para controle de acesso às funcionalidades.  
