@@ -57,8 +57,6 @@ A aplicação deve ser desenvolvida com **ASP.NET Core Razor Pages** e atender a
 ## Estrutura 
 
 ```
-/wwwroot
-  /uploads        --> Armazenamento de imagens dos veículos
 /Pages
   Index.cshtml          → Página inicial
   Create.cshtml         → Formulário de cadastro
