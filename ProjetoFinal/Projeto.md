@@ -1,6 +1,6 @@
 # Sistema de Controle de Projetos e Tarefas
 
-## 📌 Descrição
+## 📚 Descrição
 
 Este projeto é uma aplicação web desenvolvida em **ASP.NET Core MVC** com **Entity Framework Core**, como trabalho final da disciplina de Programação .NET. O principal objetivo é demonstrar a aplicação prática dos conceitos estudados ao longo do semestre, por meio da criação de aplicação web completa para controle de **Projetos** e suas respectivas **Tarefas**. Integração dos conceitos de C#, POO, .NET, ASP.NET Core e Entity Framework.
 
@@ -80,6 +80,12 @@ A aplicação segue o padrão **MVC (Model-View-Controller)** com as seguintes c
 - Entity Framework Core  
 - SQLite
 - Razor 
+
+---
+
+## 📌 Observações
+
+- Este projeto foi desenvolvido exclusivamente com base no conteúdo apresentado em aula e nos materiais oficiais da disciplina.
 
 ---
 
