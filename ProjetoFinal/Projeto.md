@@ -2,7 +2,7 @@
 
 ## 📌 Descrição
 
-Este projeto é uma aplicação web desenvolvida em **ASP.NET Core MVC** com **Entity Framework Core**, como trabalho final da disciplina de Desenvolvimento Web com .NET. O principal objetivo é demonstrar a aplicação prática dos conceitos estudados ao longo do semestre, por meio da criação de um sistema completo para controle de **Projetos** e suas respectivas **Tarefas**.
+Este projeto é uma aplicação web desenvolvida em **ASP.NET Core MVC** com **Entity Framework Core**, como trabalho final da disciplina de Programação .NET. O principal objetivo é demonstrar a aplicação prática dos conceitos estudados ao longo do semestre, por meio da criação de aplicação web completa para controle de **Projetos** e suas respectivas **Tarefas**.
 
 ---
 
@@ -78,8 +78,8 @@ A aplicação segue o padrão **MVC (Model-View-Controller)** com as seguintes c
 
 - ASP.NET Core MVC (.NET 6 ou superior)  
 - Entity Framework Core  
-- Razor Pages  
 - SQLite
+- Razor 
 
 ---
 
