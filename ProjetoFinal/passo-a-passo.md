@@ -43,18 +43,16 @@ Controllers/
 └── TarefasController.cs
 
 DAL/
-└── Contexto.cs         # Classe DbContext (Entity Framework Core)
+├── Contexto.cs          # Classe DbContext
+├── Projeto.cs           # Entidade Projeto
+└── Tarefa.cs            # Entidade Tarefa
 
 Migrations/
-└── ...                 # Arquivos de migração gerados pelo EF Core
-
-Models/
-├── Projeto.cs          # Entidade Projeto
-└── Tarefa.cs           # Entidade Tarefa
+└── ...                  # Arquivos de migração gerados pelo EF Core
 
 Views/
 ├── Home/
-│   └── Index.cshtml    # Página inicial
+│   └── Index.cshtml     # Página inicial
 ├── Projetos/
 │   ├── Create.cshtml
 │   ├── Edit.cshtml
