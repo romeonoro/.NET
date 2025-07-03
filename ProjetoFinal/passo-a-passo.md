@@ -6,8 +6,8 @@
 
 ## 2. Gerenciar Pacotes NuGet
 
-Acesse: `Ferramentas -> Gerenciar Pacotes do NuGet`  
-Instale os seguintes pacotes **na MESMA versão do seu projeto .NET**:
+Acesse: `Ferramentas -> Gerenciar de Pacotes do NuGet -> Gerenciar Pacotes do NuGet para solução`  
+Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 
 - `Microsoft.EntityFrameworkCore`
 - `Microsoft.EntityFrameworkCore.Design`
