@@ -23,6 +23,36 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 
 1. Criar as classes `Projeto` e `Contexto`
 2. Configurar o banco de dados em `appsettings.json` e `Program.cs`
+   
+📄 appsettings.json
+```bash
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Data source=produtos.db"
+  }
+}
+```
+
+📄 Program.cs (configurando o EF Core com SQLite)
+```bash
+using Microsoft.EntityFrameworkCore;
+using PrimeiroWEBEFCore.DAL;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Configurar o DbContext (Contexto) para usar o SQLite
+builder.Services.AddDbContext<Contexto>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+```
+    
 3. Executar comandos no terminal:
 
 ```bash
