@@ -22,7 +22,8 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 ## 4. Configurações Iniciais
 
 1. Criar as classes `Contexto`, `Projeto` e `Tarefa`
-
+   
+✅ Classe Contexto
 ```cs
 using Microsoft.EntityFrameworkCore;
 
@@ -51,7 +52,39 @@ public class Contexto : DbContext
 }
 ```
 
-3. Configurar o banco de dados em `appsettings.json` e `Program.cs`
+✅ Classe Projeto
+```cs
+public class Projeto
+{
+    public int ProjetoId { get; set; }
+    public string Nome { get; set; }
+    public string Cliente { get; set; }
+    public DateTime DataInicio { get; set; }
+    public DateTime? DataFim { get; set; } //(opcional)
+
+    // Relacionamento 1:N → Um projeto possui várias tarefas
+    public ICollection<Tarefa>? Tarefas { get; set; }
+}
+```
+
+✅ Classe Tarefa
+```cs
+public class Tarefa
+{
+    public int TarefaId { get; set; }
+    public string Titulo { get; set; }
+    public string Descricao { get; set; }
+    public string Status { get; set; }
+
+    // Chave estrangeira
+    public int ProjetoId { get; set; }
+
+    // Navegação reversa
+    public Projeto? Projeto { get; set; }
+}
+```
+
+2. Configurar o banco de dados em `appsettings.json` e `Program.cs`
    
 📄 appsettings.json
 ```bash
