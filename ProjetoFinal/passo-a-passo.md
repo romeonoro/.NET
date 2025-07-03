@@ -21,7 +21,7 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 
 ## 4. Configurações Iniciais
 
-1. Criar as classes `Projeto` e `Contexto`
+1. Criar as classes `Contexto`, `Projeto` e `Tarefa`
 2. Configurar o banco de dados em `appsettings.json` e `Program.cs`
    
 📄 appsettings.json
