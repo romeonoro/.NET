@@ -36,7 +36,7 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
   "AllowedHosts": "*",
 
   "ConnectionStrings": {
-    "DefaultConnection": "Data source=produtos.db"
+    "DefaultConnection": "Data source=projetos.db"
   }
 }
 ```
