@@ -101,3 +101,6 @@ Views/
     ├── Delete.cshtml
     ├── Details.cshtml
     └── Index.cshtml
+
+appsettings.json
+Program.cs
