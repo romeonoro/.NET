@@ -136,11 +136,10 @@ Controllers/
 
 DAL/
 ├── Contexto.cs                # DbContext com configuração EF Core
-└── Entidades/
-    ├── Projeto.cs             # Entidade Projeto (dados persistidos)
-    └── Tarefa.cs              # Entidade Tarefa (dados persistidos)
 
 Models/
+├── Projeto.cs             # Entidade Projeto (dados persistidos)
+└── Tarefa.cs              # Entidade Tarefa (dados persistidos)
 ├── ProjetoViewModel.cs        # ViewModel para exibir Projeto em tela 
 └── TarefaViewModel.cs         # ViewModel para exibir Tarefa em tela 
 
