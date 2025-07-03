@@ -22,7 +22,36 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 ## 4. Configurações Iniciais
 
 1. Criar as classes `Contexto`, `Projeto` e `Tarefa`
-2. Configurar o banco de dados em `appsettings.json` e `Program.cs`
+
+```cs
+using Microsoft.EntityFrameworkCore;
+
+public class Contexto : DbContext
+{
+    public DbSet<Projeto> Projetos { get; set; }
+    public DbSet<Tarefa>  Tarefas  { get; set; }
+
+    public Contexto(DbContextOptions<Contexto> options)
+        : base(options)
+    {
+    }
+    // Configura o relacionamento 1:N entre Projeto e Tarefa.
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // Uma Tarefa TEM UM Projeto
+        // Um Projeto TEM MUITAS Tarefas
+        modelBuilder.Entity<Tarefa>()
+            .HasOne(t => t.Projeto)
+            .WithMany(p => p.Tarefas)
+            .HasForeignKey(t => t.ProjetoId)
+            .OnDelete(DeleteBehavior.Cascade); // Exclui as Tarefas ao excluir o Projeto
+
+        base.OnModelCreating(modelBuilder);
+    }
+}
+```
+
+3. Configurar o banco de dados em `appsettings.json` e `Program.cs`
    
 📄 appsettings.json
 ```bash
@@ -42,9 +71,8 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 ```
 
 📄 Program.cs (configurando o EF Core com SQLite)
-```bash
+```cs
 using Microsoft.EntityFrameworkCore;
-using PrimeiroWEBEFCore.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
