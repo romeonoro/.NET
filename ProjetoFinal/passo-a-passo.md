@@ -34,24 +34,36 @@ dotnet ef database update
 
 - Caminho: Adicionar > Controlador > Controlador MVC com exibições, usando Entity Framework
 
-## 6. Estrutura do Projeto
+## 6. 📁 Estrutura do Projeto
 
+```text
 Controllers/
 ├── HomeController.cs
 ├── ProjetosController.cs
-├── TarefasController.cs
+└── TarefasController.cs
 
 DAL/
-└── Contexto.cs  (DbContext)
+└── Contexto.cs         # Classe DbContext (Entity Framework Core)
 
 Migrations/
+└── ...                 # Arquivos de migração gerados pelo EF Core
 
 Models/
-├── Projeto.cs
-└── Tarefa.cs
+├── Projeto.cs          # Entidade Projeto
+└── Tarefa.cs           # Entidade Tarefa
 
 Views/
 ├── Home/
+│   └── Index.cshtml    # Página inicial
+├── Projetos/
+│   ├── Create.cshtml
+│   ├── Edit.cshtml
+│   ├── Delete.cshtml
+│   ├── Details.cshtml
 │   └── Index.cshtml
-└── Projetos/
-    └── CRUD.cshtml
+└── Tarefas/
+    ├── Create.cshtml
+    ├── Edit.cshtml
+    ├── Delete.cshtml
+    ├── Details.cshtml
+    └── Index.cshtml
