@@ -62,7 +62,7 @@ public class Projeto
     public DateTime DataInicio { get; set; }
     public DateTime? DataFim { get; set; } //(opcional)
 
-    // Relacionamento 1:N → Um projeto possui várias tarefas
+    // Relacionamento 1:N → Um projeto possui várias tarefas (Lista)
     public ICollection<Tarefa>? Tarefas { get; set; }
 }
 ```
