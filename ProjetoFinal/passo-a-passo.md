@@ -66,6 +66,7 @@ dotnet ef database update
 
 ## 6. 📁 Estrutura do Projeto
 
+
 ```text
 Controllers/
 ├── HomeController.cs
@@ -73,16 +74,21 @@ Controllers/
 └── TarefasController.cs
 
 DAL/
-├── Contexto.cs          # Classe DbContext
-├── Projeto.cs           # Entidade Projeto
-└── Tarefa.cs            # Entidade Tarefa
+├── Contexto.cs                # DbContext com configuração EF Core
+└── Entidades/
+    ├── Projeto.cs             # Entidade Projeto (dados persistidos)
+    └── Tarefa.cs              # Entidade Tarefa (dados persistidos)
+
+Models/
+├── ProjetoViewModel.cs        # ViewModel para exibir Projeto em tela 
+└── TarefaViewModel.cs         # ViewModel para exibir Tarefa em tela 
 
 Migrations/
-└── ...                  # Arquivos de migração gerados pelo EF Core
+└── ...                        # Arquivos de migração gerados pelo EF Core
 
 Views/
 ├── Home/
-│   └── Index.cshtml     # Página inicial
+│   └── Index.cshtml           # Página inicial
 ├── Projetos/
 │   ├── Create.cshtml
 │   ├── Edit.cshtml
