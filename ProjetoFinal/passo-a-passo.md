@@ -1,7 +1,7 @@
 # Relacionamento Um-para-Muitos (1)
 
 ## 1. Criar Projeto
-
+- IDE: Visual Studio 2022
 - Tipo: Aplicativo Web do ASP.NET Core (Model-View-Controller)
 
 ## 2. Gerenciar Pacotes NuGet
