@@ -115,6 +115,8 @@ builder.Services.AddDbContext<Contexto>(options =>
 ```
     
 3. Executar comandos no terminal:
+   
+Acesse: `Exibir -> Terminal || Ctrl +'`
 
 ```bash
 dotnet ef migrations add InitialCreate
