@@ -149,10 +149,8 @@ DAL/
 ├── Contexto.cs                # DbContext com configuração EF Core
 
 Models/
-├── Projeto.cs             # Entidade Projeto (dados persistidos)
-└── Tarefa.cs              # Entidade Tarefa (dados persistidos)
-├── ProjetoViewModel.cs        # ViewModel para exibir Projeto em tela 
-└── TarefaViewModel.cs         # ViewModel para exibir Tarefa em tela 
+├── Projeto.cs             
+└── Tarefa.cs              
 
 Migrations/
 └── ...                        # Arquivos de migração gerados pelo EF Core
@@ -166,6 +164,8 @@ Views/
 │   ├── Delete.cshtml
 │   ├── Details.cshtml
 │   └── Index.cshtml
+├── Shared/
+│   └── _Layout.cshtml
 └── Tarefas/
     ├── Create.cshtml
     ├── Edit.cshtml
@@ -175,3 +175,4 @@ Views/
 
 appsettings.json
 Program.cs
+projetos.db
