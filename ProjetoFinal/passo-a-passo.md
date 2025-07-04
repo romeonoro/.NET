@@ -176,3 +176,7 @@ Views/
 appsettings.json
 Program.cs
 projetos.db
+```
+## 7. Iniciar sem depurar (CTRL + F5)
+![Captura de tela 2025-07-03 232227](https://github.com/user-attachments/assets/e71b0130-7ec7-4f62-86b2-f983db8b837d)
+
