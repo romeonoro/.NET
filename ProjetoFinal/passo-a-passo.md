@@ -15,6 +15,15 @@ Instale os seguintes pacotes **na MESMA versão do seu projeto .NET (9.0.0)**:
 - `Microsoft.EntityFrameworkCore.Sqlite.Core`
 - `Microsoft.EntityFrameworkCore.Tools`
 
+OU
+
+Acesse: `Exibir -> Terminal`
+```bash
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+```
+
 ## 3. Instalar DB Browser for SQLite
 
 - Site oficial: [sqlitebrowser.org](https://sqlitebrowser.org)
